@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
         &:active,
         &.active {
         	color: darken(@brand-primary, 10%);
+        	background-color: @gray-darkest;
         }
 	}
 	.navbar-collapse {
@@ -114,10 +115,14 @@ h1, h2, h3, h4, h5, h6 {
     			font-weight: 400;
     			letter-spacing: 1px;
     			color: white;
+    			border-color: @gray-darkest;
+    			background-color: @gray-darkest;
+    			border-radius: 3px;
     			&:hover,
     			&:focus {
     				color: @brand-primary;
     				outline: none;
+    				background-color: @gray-darkest;
     			}
     		}
     	}
@@ -147,6 +152,9 @@ h1, h2, h3, h4, h5, h6 {
 	        -webkit-transition: all 0.3s;
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
+	        border-color: @gray-darkest;
+	        background-color: @gray-darkest;
+	        border-radius: 3px;
 	    }
 		.navbar-nav>.active>a {
 			border-radius: 3px;
@@ -176,12 +184,14 @@ header {
 			.serif-font;
 			font-style: italic;
 			font-size: 22px;
+			font-weight: 700;
 			line-height: 22px;
 			margin-bottom: 25px;
+			
 		}
 		.intro-heading {
 			.heading-font;
-			font-weight: 700;
+			font-weight: 900;
 			font-size: 50px;
 			line-height: 50px;
 			margin-bottom: 25px;
@@ -246,7 +256,7 @@ section {
 
 // Portfolio Section
 
-#portfolio {
+#media {
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -310,7 +320,7 @@ section {
 }
 
 @media(min-width:767px) {
-    #portfolio {
+    #media {
         .portfolio-item {
             margin: 0 0 30px;
         }
@@ -503,11 +513,13 @@ section {
 // Team Section
 
 .team-member {
-	text-align: center;
-	margin-bottom: 50px;
+	text-align: left;
+	margin-right: 50px;
+	margin-left: 50px;
+	border: 2px solid;
 	img {
-		margin: 0 auto;
-		border: 7px solid white;
+		margin: 0 0 0 0;
+		border: 0px solid white;
 	}
 	h4 {
 		margin-top: 25px;
@@ -517,6 +529,11 @@ section {
 	p {
 		margin-top: 0;
 	}
+}
+
+.team-caption {
+	border-bottom: 2px solid;
+	padding: 0 4px 0 4px;
 }
 
 // Clients Aside
@@ -725,4 +742,16 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @brand-primary;
+}
+
+.bold {
+	font-weight: bold;
+	text-align: left;
+}
+
+#slider{
+	h2{
+		margin: 0 0 100px 0;
+	}
+
 }
