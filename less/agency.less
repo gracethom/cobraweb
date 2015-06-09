@@ -70,12 +70,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-xl {
-	.button-variant(white; @brand-primary; @brand-primary);
-	.heading-font;
-	font-weight: 700;
-	border-radius: 3px;
+	.button-variant(black; @cb-caption-background; black;);
+	border:2px solid black;
 	font-size: 18px;
 	padding: 20px 40px;
+	border-radius:0;
 }
 
 // Custom Navigation Bar
@@ -85,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-color: transparent;
 	.navbar-brand {
 		color: @brand-primary;
-		.script-font;
+		.hand-mixed-case-font();
         &:hover,
         &:focus,
         &:active,
@@ -111,8 +110,8 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
     	li {
     		a {
-    			.heading-font;
-    			font-weight: 400;
+    			.hand-mixed-case-font();
+    			font-size:14pt;
     			letter-spacing: 1px;
     			color: white;
     			border-color: @gray-darkest;
@@ -176,13 +175,12 @@ header {
 	background-position: center center;
 	.background-cover;
 	text-align: center;
-	color: white;
+	color: black;
 	.intro-text {
 		padding-top: 100px;
 		padding-bottom: 50px;
 		.intro-lead-in {
-			.serif-font;
-			font-style: italic;
+			.hand-mixed-case-font();
 			font-size: 22px;
 			font-weight: 700;
 			line-height: 22px;
@@ -194,7 +192,7 @@ header {
 			font-weight: 900;
 			font-size: 50px;
 			line-height: 50px;
-			margin-bottom: 25px;
+			margin-bottom: 5px;
 		}
 	}
 }
@@ -205,18 +203,16 @@ header {
 			padding-top: 300px;
 			padding-bottom: 200px;
 			.intro-lead-in {
-				.serif-font;
-				font-style: italic;
+				.hand-mixed-case-font();
 				font-size: 40px;
 				line-height: 40px;
 				margin-bottom: 25px;
 			}
 			.intro-heading {
-				.heading-font;
+				.hand-mixed-case-font();
 				font-weight: 700;
 				font-size: 75px;
 				line-height: 75px;
-				margin-bottom: 50px;
 			}
 		}
 	}
@@ -225,7 +221,7 @@ header {
 // Global Section Styles
 
 section {
-    padding: 100px 0;
+    padding: 80px 0;
     h2.section-heading {
 		font-size: 40px;
 		margin-top: 0;
@@ -235,7 +231,6 @@ section {
 		font-size: 16px;
 		.serif-font;
 		text-transform: none;
-		font-style: italic;
 		font-weight: 400;
 		margin-bottom: 75px;
     }
@@ -243,7 +238,7 @@ section {
 
 @media(min-width:768px) {
 	section {
-		padding: 150px 0;
+		padding: 80px 0;
 	}
 }
 
@@ -516,6 +511,7 @@ section {
 	text-align: left;
 	margin-right: 50px;
 	margin-left: 50px;
+	margin-bottom:10px;
 	border: 2px solid;
 	img {
 		margin: 0 0 0 0;
@@ -531,10 +527,15 @@ section {
 	}
 }
 
-.team-caption {
+.cb-caption {
 	border-bottom: 2px solid;
-	padding: 0 4px 0 4px;
+	padding: 4px;
+	background-color:@cb-caption-background;
 }
+
+.cb-caption p {line-height:1; margin:0;}
+
+
 
 // Clients Aside
 
@@ -546,7 +547,13 @@ aside.clients {
 
 // Contact Section
 
+.form-control-xl {
+font-size:16pt;
+.hand-mixed-case-font();
+}
+
 section#contact {
+	
 	background-color: @gray-darkest;
 	background-image: url('../img/map-image.png');
 	background-position: center;
@@ -572,22 +579,18 @@ section#contact {
 		box-shadow: none;
 	}
 	::-webkit-input-placeholder {
-	   .heading-font;
 	   font-weight: 700;
 	   color: @placeholder-text;
 	}
 	:-moz-placeholder { /* Firefox 18- */
-	   .heading-font;
 	   font-weight: 700;
 	   color: @placeholder-text;
 	}
 	::-moz-placeholder {  /* Firefox 19+ */
-	   .heading-font;
 	   font-weight: 700;
 	   color: @placeholder-text;
 	}
 	:-ms-input-placeholder {  
-	   .heading-font;
 	   font-weight: 700;
 	   color: @placeholder-text;
 	}
@@ -600,10 +603,8 @@ section#contact {
 
 footer {
 	padding: 25px 0;
-	text-align: center;
+
 	span.copyright {
-		line-height: 40px;
-		.heading-font;
 		text-transform: none;
 	}
 	ul.quicklinks {
