@@ -37,11 +37,15 @@ a {
 	color: @brand-primary;
 }
 
+nav a {
+	color: @brand-primary-on-dark;
+}
+
 a:hover,
 a:focus,
 a:active,
 a.active {
-	color: darken(@brand-primary, 10%);
+	color: darken(@brand-primary-on-dark, 10%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -83,13 +87,13 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: @gray-darkest;
 	border-color: transparent;
 	.navbar-brand {
-		color: @brand-primary;
+		color: @brand-primary-on-dark;
 		.hand-mixed-case-font();
         &:hover,
         &:focus,
         &:active,
         &.active {
-        	color: darken(@brand-primary, 10%);
+        	color: darken(@brand-primary-on-dark, 10%);
         	background-color: @gray-darkest;
         }
 	}
@@ -119,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
     			border-radius: 3px;
     			&:hover,
     			&:focus {
-    				color: @brand-primary;
+    				color: @brand-primary-on-dark;
     				outline: none;
     				background-color: @gray-darkest;
     			}
@@ -129,12 +133,12 @@ h1, h2, h3, h4, h5, h6 {
 	.navbar-nav>.active>a {
 		border-radius: 0;
 		color: white;
-		background-color: @brand-primary;
+		background-color: @brand-primary-on-dark;
 	}
 	.navbar-nav>.active>a:hover,
 	.navbar-nav>.active>a:focus {
 		color: white;
-		background-color: darken(@brand-primary, 10%);
+		background-color: darken(@brand-primary-on-dark, 10%);
 	}
 }
 
@@ -725,12 +729,12 @@ ul.social-buttons {
 
 ::-moz-selection {
     text-shadow: none;
-    background: @brand-primary;
+    background: @brand-primary-on-dark;
 }
 
 ::selection {
     text-shadow: none;
-    background: @brand-primary;
+    background: @brand-primary-on-dark;
 }
 
 img::selection {
