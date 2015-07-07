@@ -556,14 +556,23 @@ font-size:16pt;
 .hand-mixed-case-font();
 }
 
+.hand-mixed {
+.hand-mixed-case-font();
+font-size:18pt;
+}
+
 section#contact {
-	
+	.hand-mixed;
 	background-color: @gray-darkest;
 	background-image: url('../img/map-image.png');
 	background-position: center;
 	background-repeat: no-repeat;
-	.section-heading {
-		color: white;
+	color: #fed136;
+	a {
+		color:#b6dbee;
+		.body-font();
+		font-size:18pt;
+		
 	}
 	.form-group {
 		margin-bottom: 25px;

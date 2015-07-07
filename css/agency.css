@@ -562,14 +562,23 @@ aside.clients img {
   font-size: 16pt;
   font-family: ff-providence-sans-web-pro, "Helvetica Neue", Helvetica, Arial, cursive;
 }
+.hand-mixed {
+  font-family: ff-providence-sans-web-pro, "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 18pt;
+}
 section#contact {
+  font-family: ff-providence-sans-web-pro, "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 18pt;
   background-color: #222222;
   background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
+  color: #fed136;
 }
-section#contact .section-heading {
-  color: white;
+section#contact a {
+  color: #b6dbee;
+  font-family: "classic-comic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18pt;
 }
 section#contact .form-group {
   margin-bottom: 25px;

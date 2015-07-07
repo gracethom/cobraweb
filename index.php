@@ -36,7 +36,7 @@
 </head>
 
 <body id="page-top" class="index">
-
+	<?php include_once("analyticstracking.php") ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -386,7 +386,7 @@ The CoBRA project will address this gap in comics scholarship by providing acces
                 </div>
                 </div>
             </div>
-        </div>
+        
     </section> 
     
     <!-- Contact Section -->
@@ -398,40 +398,15 @@ The CoBRA project will address this gap in comics scholarship by providing acces
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-xl" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control form-control-xl" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <!--
-                                <div class="form-group">
-                                    <input type="tel" class="form-control form-control-xl" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control form-control-xl" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-lg-12 text-center">
+                For questions, comments, feedback about CoBRA, please write to:
+                <div class="text-center">
+                <a href="mailto:comics@indiana.edu">comics@indiana.edu</a>
+              	</div>
                 </div>
             </div>
+                           
+               
         </div>
     </section>
 
