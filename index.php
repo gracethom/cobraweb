@@ -168,8 +168,8 @@ The CoBRA project will address this gap in comics scholarship by providing acces
                  <div class="col-sm-4">
                     <div class="team-member">
                         <div class="cb-caption">
-                           <p><strong>Richard Higgins, Ph.D.</strong><br />
-                            Master's student in Information Science at Indiana University Bloomington</p>
+                           <p><strong>Richard Higgins</strong><br />
+                            Open Access Publishing Manager, IU Bloomington Libraries</p>
                         </div>
                         <img src="img/team/richard.jpg" class="img-responsive" alt="">
                     </div>
